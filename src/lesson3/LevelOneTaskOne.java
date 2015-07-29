@@ -24,7 +24,11 @@ public class LevelOneTaskOne {
     }
 
     private static int select(int x, int y){
-        if (x > y) return x;
-        else return y;
+        if (x > y) {
+            return x;
+        }
+        else {
+            return y;
+        }
     }
 }
