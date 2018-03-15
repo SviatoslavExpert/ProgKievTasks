@@ -12,13 +12,10 @@ public class LevelOneTaskTwo {
 
     public static void main (String []args){
 
-        //  Scanning the number
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число от 4-х до 16:");
         int number = sc.nextInt();
 
-        //  meeting the condition 4 < n < 16
-        //  calculating and printing factorial of n
         int x = 1;
         if(number > 4 && number < 16) {
             for (int i = 1; i <= number; i++) {
