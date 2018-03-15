@@ -14,7 +14,7 @@ public class LevelOneTaskTwo {
 
     public static void main(String []args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter flat number:");
+        System.out.println("Enter flat number (1 - 144):");
 
         int flatNumber = sc.nextInt();
         int entrance = ((int)((flatNumber - 1)/36)) + 1;
