@@ -23,7 +23,7 @@ public class LevelTwoTaskOne {
         int num = sc.nextInt()*2;
 
         int j = 0;
-        for(int i = 0; i < (num - 1) ;){
+        for(int i = 0; i < (num - 1);){
             if(j >= (num/2) - Math.abs(num/2 - i)){
                 System.out.println();
                 i++;
