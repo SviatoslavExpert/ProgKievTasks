@@ -21,7 +21,7 @@ public class LevelTwoTaskThree {
 
         if(width%2 != 0){
 
-            for (int i = 1; i <= width / 2 + 1; i++) {
+            for (int i = 1; i <= width/2 + 1; i++) {
                 for (int j = 1; j <= width; j++) {
 
                     if (j >= i && j <= width - i + 1) {
