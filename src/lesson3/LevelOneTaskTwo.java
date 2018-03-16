@@ -15,12 +15,16 @@ public class LevelOneTaskTwo {
     public static void main(String []args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter flat number (1 - 144):");
-
         int flatNumber = sc.nextInt();
-        int entrance = ((int)((flatNumber - 1)/36)) + 1;
-        int floor = (int)(((flatNumber - 1)%36)/4 + 1);
 
-        System.out.println("Entrance is: " + entrance);
-        System.out.println("Floor is: " + floor);
+        if(flatNumber > 0 && flatNumber <= 144) {
+            int entrance = ((int) ((flatNumber - 1) / 36)) + 1;
+            int floor = (int) (((flatNumber - 1) % 36) / 4 + 1);
+
+            System.out.println("Entrance is: " + entrance);
+            System.out.println("Floor is: " + floor);
+        }else{
+            System.out.print("Квартиры с таким номером в этом доме нет.");
+        }
     }
 }
