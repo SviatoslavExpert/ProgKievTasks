@@ -20,7 +20,7 @@ public class LevelOneTaskFour {
         System.out.println("Введите длину третьей стороны треугольника:");
         double c = sc.nextDouble();
 
-        if(a + b > c){
+        if((a + b) > c && (a + c) > b && (b + c) > a){
             System.out.println("Треугольник существует.");
         }
         else{
