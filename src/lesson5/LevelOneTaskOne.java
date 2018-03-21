@@ -5,7 +5,7 @@
 
 package lesson5;
 
-public class LevelFiveTaskOne {
+public class LevelOneTaskOne {
 
     public static void main(String[] args){
 
