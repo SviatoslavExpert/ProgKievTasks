@@ -14,7 +14,7 @@ public class LevelOneTaskFour {
         System.out.println("Введите строку: ");
         String s = sc.nextLine();
 
-        char[] arrayOfCharacters = s.toCharArray(); // created an array o characters
+        char[] arrayOfCharacters = s.toCharArray(); // created an array of characters
 
         int counter = 0;
         for(int i = 0; i < arrayOfCharacters.length; i++){
