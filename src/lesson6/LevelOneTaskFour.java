@@ -19,11 +19,14 @@ public class LevelOneTaskFour {
     }
 
     private static int searchElement(int a, int[] arr){
-        int result = 0;
+        int result = -10000;
         for(int i = 0; i < arr.length; i++){
             if(arr[i] == a){
                 result = i;
             }
+        }
+        if(result == -10000){
+            result = -1;
         }
         return result;
     }
