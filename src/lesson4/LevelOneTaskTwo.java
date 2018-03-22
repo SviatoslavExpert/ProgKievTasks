@@ -14,9 +14,9 @@ public class LevelOneTaskTwo {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число от 4-х до 16:");
-        double number = sc.nextDouble();
+        long number = sc.nextLong();  // ??????
 
-        double x = 1;
+        long x = 1;
         if(number > 4 && number < 16) {
             for (int i = 1; i <= number; i++) {
                 x *= i;
