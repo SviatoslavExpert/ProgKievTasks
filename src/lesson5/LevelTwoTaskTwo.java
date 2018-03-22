@@ -18,12 +18,12 @@ public class LevelTwoTaskTwo {
         rotateArray(arr);
     }
 
-    private static void rotateArray(int[]a){
-        for (int i = 0; i < a.length/2; i++) {
-            int b = a[i];
-            a[i] = a[a.length - 1 - i];
-            a[a.length - i - 1] = b;
+    private static void rotateArray(int[]arr){
+        for (int i = 0; i < arr.length/2; i++) {
+            int b = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - i - 1] = b;
         }
-        System.out.println("Array after rotation: " + Arrays.toString(a));
+        System.out.println("Array after rotation: " + Arrays.toString(arr));
     }
 }
