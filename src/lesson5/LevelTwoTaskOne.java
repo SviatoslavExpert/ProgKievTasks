@@ -18,7 +18,6 @@
 [5, 5, 5, 5, 5, 5]
 [6, 6, 6, 6, 6, 6]
  */
-
 package lesson5;
 
 public class LevelTwoTaskOne {
