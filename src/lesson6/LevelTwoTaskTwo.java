@@ -10,8 +10,9 @@ package lesson6;
 public class LevelTwoTaskTwo {
 
     public static void main(String[] args){
+        /* Создаем массив и заполняем его числами, размер массива: 999 * 999 */
         int otv = 0;
-        int[] m = new int[999 * 999]; //в этом массиве будут все палиндромы
+        int[] m = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
         int u = 0;
         for (int i = 999; i > 1; --i)
         {
@@ -26,6 +27,7 @@ public class LevelTwoTaskTwo {
                 }
             }
         }
+
         otv = m[0];   //ищем макс. элемент массива
         for (int i = 1; i < m.length; ++i)
         {
