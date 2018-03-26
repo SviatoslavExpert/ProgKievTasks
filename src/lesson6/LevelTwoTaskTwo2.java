@@ -7,24 +7,52 @@
  */
 package lesson6;
 
+import java.util.*;
+
 public class LevelTwoTaskTwo2 {
 
     public static void main(String[] args) {
-
-        System.out.println(createArray());
-        getPalindromes(arr);
-    }
-
-    private static int[] createArray(){
         /* Создаем массив и заполняем его числами, размер массива: 999 * 999 */
         int[] arr = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
 
         for(int i = 0; i < arr.length; i++){
             arr[i] = i;
         }
-        return arr;
+        getPalindromes(arr);
     }
-    private static int getPalindromes(int[] arr){
 
+    public static void getPalindromes(int[] arr){
+        int partOne;
+        int partTwo;
+        int partThree;
+        int partFour;
+        int partFive;
+        int partSix;
+        ArrayList arrayOfPalindromes = new ArrayList();
+        for(int i = 0; i < arr.length; i++){
+            if(Integer.toString(arr[i]).length() == 6){
+                partOne = arr[i] / 100000;
+                partTwo = arr[i] % 100000 / 10000;
+                partThree = arr[i] % 10000 / 1000;
+                partFour = arr[i] % 1000 / 100;
+                partFive = arr[i] % 100 / 10;
+                partSix = arr[i] % 10;
+                if(partOne == partSix && partTwo == partFive && partThree == partFour){
+                    arrayOfPalindromes.add(arr[i]);
+                }
+            }
+        }
+        System.out.print(Arrays.toString(arrayOfPalindromes.toArray()));
     }
 }
+
+/*
+
+        Arrays.toString(arrayOfPalindromes.toArray())
+
+        System.out.println(num / 10000);
+        System.out.println(num % 10000 / 1000);
+        System.out.println(num % 1000 / 100);
+        System.out.println(num % 100 / 10);
+        System.out.println(num % 10);
+ */
