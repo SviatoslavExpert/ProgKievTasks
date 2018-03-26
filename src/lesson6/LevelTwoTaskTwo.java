@@ -18,10 +18,10 @@ public class LevelTwoTaskTwo {
         for(int i = 0; i < arr.length; i++){
             arr[i] = i;
         }
-        getPalindromes(arr);
+        getMaxPalindrome(arr);
     }
 
-    public static void getPalindromes(int[] arr){
+    private static void getMaxPalindrome(int[] arr){
         int partOne;
         int partTwo;
         int partThree;
@@ -42,6 +42,7 @@ public class LevelTwoTaskTwo {
                 }
             }
         }
-        System.out.print(Arrays.toString(arrayOfPalindromes.toArray()));
+        System.out.println("All palindromes: " + Arrays.toString(arrayOfPalindromes.toArray()));
+        System.out.println("Maximum palindrome: " + arrayOfPalindromes.get(arrayOfPalindromes.size() - 1));
     }
 }
