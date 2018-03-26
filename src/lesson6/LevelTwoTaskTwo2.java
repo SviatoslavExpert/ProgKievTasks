@@ -9,42 +9,22 @@ package lesson6;
 
 public class LevelTwoTaskTwo2 {
 
-    public static void main(String[] args){
-        /* Создаем массив и заполняем его числами, размер массива: 999 * 999 */
-        int otv = 0;
-        int[] m = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
+    public static void main(String[] args) {
 
-        int u = 0;
-        for (int i = 999; i > 1; --i)
-        {
-            for (int j = 999; j > 1; --j)
-            {
-                otv = i * j; // то самое произведения
-                if (otv == ObratChislo(otv)) // проверяем на "палиндромность"
-                {
-                    m[u] = otv; //пишем в массив
-                    ++u;        //увеличиваем индекс массива
-                    break;      //завершаем цикл
-                }
-            }
-        }
-
-        otv = m[0];   //ищем макс. элемент массива
-        for (int i = 1; i < m.length; ++i)
-        {
-            if (m[i]> otv) otv = m[i];
-        }
-        System.out.println(otv);
+        System.out.println(createArray());
+        getPalindromes(arr);
     }
 
-    /* метод для получения "обратного" числа - для 1234 вернет 4321 */
-    static int ObratChislo(int n){
-        int obr = 0;
-        while (n > 0)
-        {
-            obr = 10 * obr + n % 10;
-            n /= 10;
+    private static int[] createArray(){
+        /* Создаем массив и заполняем его числами, размер массива: 999 * 999 */
+        int[] arr = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = i;
         }
-        return obr;
+        return arr;
+    }
+    private static int getPalindromes(int[] arr){
+
     }
 }
