@@ -45,14 +45,3 @@ public class LevelTwoTaskTwo2 {
         System.out.print(Arrays.toString(arrayOfPalindromes.toArray()));
     }
 }
-
-/*
-
-        Arrays.toString(arrayOfPalindromes.toArray())
-
-        System.out.println(num / 10000);
-        System.out.println(num % 10000 / 1000);
-        System.out.println(num % 1000 / 100);
-        System.out.println(num % 100 / 10);
-        System.out.println(num % 10);
- */
