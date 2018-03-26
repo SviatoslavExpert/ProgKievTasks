@@ -7,43 +7,41 @@
  */
 package lesson6;
 
+import java.util.*;
+
 public class LevelTwoTaskTwo {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /* Создаем массив и заполняем его числами, размер массива: 999 * 999 */
-        int otv = 0;
-        int[] m = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
-        int u = 0;
-        for (int i = 999; i > 1; --i)
-        {
-            for (int j = 999; j > 1; --j)
-            {
-                otv = i * j; // то самое произведения
-                if (otv == ObratChislo(otv)) // проверяем на "палиндромность"
-                {
-                    m[u] = otv; //пишем в массив
-                    ++u;        //увеличиваем индекс массива
-                    break;      //завершаем цикл
+        int[] arr = new int[999 * 999]; //в этом массиве будут все палиндромы (пустой массив для заполнения)
+
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = i;
+        }
+        getPalindromes(arr);
+    }
+
+    public static void getPalindromes(int[] arr){
+        int partOne;
+        int partTwo;
+        int partThree;
+        int partFour;
+        int partFive;
+        int partSix;
+        ArrayList arrayOfPalindromes = new ArrayList();
+        for(int i = 0; i < arr.length; i++){
+            if(Integer.toString(arr[i]).length() == 6){
+                partOne = arr[i] / 100000;
+                partTwo = arr[i] % 100000 / 10000;
+                partThree = arr[i] % 10000 / 1000;
+                partFour = arr[i] % 1000 / 100;
+                partFive = arr[i] % 100 / 10;
+                partSix = arr[i] % 10;
+                if(partOne == partSix && partTwo == partFive && partThree == partFour){
+                    arrayOfPalindromes.add(arr[i]);
                 }
             }
         }
-
-        otv = m[0];   //ищем макс. элемент массива
-        for (int i = 1; i < m.length; ++i)
-        {
-            if (m[i]> otv) otv = m[i];
-        }
-        System.out.println(otv);
-    }
-
-    /* метод для получения "обратного" числа - для 1234 вернет 4321 */
-    static int ObratChislo(int n){
-        int obr = 0;
-        while (n > 0)
-        {
-            obr = 10 * obr + n % 10;
-            n /= 10;
-        }
-        return obr;
+        System.out.print(Arrays.toString(arrayOfPalindromes.toArray()));
     }
 }
