@@ -12,6 +12,30 @@
  */
 package lesson6;
 
-public class LevelTwoTaskOne {
+import java.util.Scanner;
 
+public class LevelTwoTaskOne {
+    public static void main(String[] args){
+        getPattern(scanNumbers());
+    }
+
+    private static int[] scanNumbers(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Укажите, пожалуйста, сколько чисел вы собираетесь ввести: ");
+        int numbers = sc.nextInt();
+
+        int[] arr = new int[numbers];
+
+        int num = 0;
+        for(int i = 0; i < numbers; i++){
+            System.out.println("Введите число № " + i);
+            num = sc.nextInt();
+            arr[i] = num;
+        }
+        return arr;
+    }
+
+    private static int getPattern(int[] arr){
+
+    }
 }
