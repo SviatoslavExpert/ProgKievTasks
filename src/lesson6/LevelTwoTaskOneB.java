@@ -60,7 +60,7 @@ public class LevelTwoTaskOneB {
             if(arr[i] == Math.pow(i + 1, 2)){
                 ++countFive;
             }
-            if(arr[i] == Math.pow(i, 3)){
+            if(arr[i] == Math.pow(i + 1, 3)){
                 ++countSix;
             }
         }
@@ -87,7 +87,7 @@ public class LevelTwoTaskOneB {
             System.out.println("Следующее число в этой последовательности: " + (int)(Math.pow(arr.length + 1, 2)));
         }
         if(counts[5] >= 3 ){
-            System.out.println("Следующее число в этой последовательности: " + (Math.pow(arr[arr.length - 1], 3)));
+            System.out.println("Следующее число в этой последовательности: " + (int)(Math.pow(arr.length + 1, 3)));
         }
     }
 }
