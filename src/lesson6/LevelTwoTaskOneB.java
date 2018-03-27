@@ -70,22 +70,22 @@ public class LevelTwoTaskOneB {
     }
 
     private static void printNumber(int[] counts, int[]arr){
-        if(counts[0] >= 4 ){
+        if(counts[0] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] + 2));
         }
-        if(counts[1] >= 4 ){
+        if(counts[1] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] + 3));
         }
-        if(counts[1] >= 4 ){
+        if(counts[2] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] * 2));
         }
-        if(counts[1] >= 4 ){
+        if(counts[3] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] * 3));
         }
-        if(counts[1] >= 4 ){
+        if(counts[4] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (Math.pow(arr[arr.length - 1], 2)));
         }
-        if(counts[1] >= 4 ){
+        if(counts[5] >= 3 ){
             System.out.println("Следующее число в этой последовательности: " + (Math.pow(arr[arr.length - 1], 3)));
         }
     }
