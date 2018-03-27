@@ -22,7 +22,8 @@ public class LevelTwoTaskOneB {
 
     private static int[] scanNumbers() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Необходимо ввести не менее 4-х чисел. Укажите, сколько чисел вы собираетесь ввести: ");
+        System.out.println("Необходимо ввести не менее 4-х чисел.");
+        System.out.println("Укажите, сколько чисел вы собираетесь ввести: ");
         int numbers = sc.nextInt();
         int[] arr = new int[numbers];
 
