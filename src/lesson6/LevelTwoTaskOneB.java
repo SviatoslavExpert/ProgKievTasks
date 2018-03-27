@@ -65,7 +65,7 @@ public class LevelTwoTaskOneB {
             }
         }
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
-        System.out.println("Array counts: " + Arrays.toString(counts));
+        System.out.println("Массив counts: " + Arrays.toString(counts));
 
         printNumber(counts, arr);
     }
