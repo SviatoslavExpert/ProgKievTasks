@@ -12,19 +12,18 @@
  */
 package lesson6;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LevelTwoTaskOneB {
     public static void main(String[] args) {
-
-        printNumber((checkSequence(scanNumbers())), scanNumbers());
+        checkSequence(scanNumbers());
     }
 
     private static int[] scanNumbers() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Необходимо ввести не менее 4-х чисел. Укажите, сколько чисел вы собираетесь ввести: ");
         int numbers = sc.nextInt();
-
         int[] arr = new int[numbers];
 
         int num = 0;
@@ -33,10 +32,11 @@ public class LevelTwoTaskOneB {
             num = sc.nextInt();
             arr[i] = num;
         }
+        System.out.println(Arrays.toString(arr));
         return arr;
     }
 
-    private static int[] checkSequence(int[] arr) {
+    private static void checkSequence(int[] arr) {
         int countOne = 0;
         int countTwo = 0;
         int countThree = 0;
@@ -64,7 +64,8 @@ public class LevelTwoTaskOneB {
             }
         }
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
-        return counts;
+
+        printNumber(counts, arr);
     }
 
     private static void printNumber(int[] counts, int[]arr){
