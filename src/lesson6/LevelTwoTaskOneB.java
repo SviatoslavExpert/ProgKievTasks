@@ -32,7 +32,7 @@ public class LevelTwoTaskOneB {
             num = sc.nextInt();
             arr[i] = num;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Array arr: " + Arrays.toString(arr));
         return arr;
     }
 
@@ -64,6 +64,7 @@ public class LevelTwoTaskOneB {
             }
         }
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
+        System.out.println("Array counts: " + Arrays.toString(counts));
 
         printNumber(counts, arr);
     }
