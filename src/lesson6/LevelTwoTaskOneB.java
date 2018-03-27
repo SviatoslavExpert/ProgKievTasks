@@ -47,15 +47,20 @@ public class LevelTwoTaskOneB {
         for(int i = 0; i < (arr.length - 1); i++){
             if(arr[i] + 2 == arr[i + 1]){
                 ++countOne;
-            }else if(arr[i] + 3 == arr[i + 1]){
+            }
+            if(arr[i] + 3 == arr[i + 1]){
                 ++countTwo;
-            }else if(arr[i] * 2 == arr[i + 1]){
+            }
+            if(arr[i] * 2 == arr[i + 1]){
                 ++countThree;
-            }else if(arr[i] * 3 == arr[i + 1]){
+            }
+            if(arr[i] * 3 == arr[i + 1]){
                 ++countFour;
-            }else if(Math.pow(arr[i], 2) == arr[i + 1]){
+            }
+            if(Math.pow(arr[i], 2) == arr[i + 1]){
                 ++countFive;
-            }else if(Math.pow(arr[i], 3) == arr[i + 1]){
+            }
+            if(Math.pow(arr[i], 3) == arr[i + 1]){
                 ++countSix;
             }
         }
