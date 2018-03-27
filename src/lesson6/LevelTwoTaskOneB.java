@@ -57,10 +57,10 @@ public class LevelTwoTaskOneB {
             if(arr[i] * 3 == arr[i + 1]){
                 ++countFour;
             }
-            if(arr[i] == Math.pow(arr[i], 2)){
+            if(arr[i] == Math.pow(i, 2)){
                 ++countFive;
             }
-            if(arr[i] == Math.pow(arr[i], 3)){
+            if(arr[i] == Math.pow(i, 3)){
                 ++countSix;
             }
         }
