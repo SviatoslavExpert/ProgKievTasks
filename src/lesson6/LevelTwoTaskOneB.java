@@ -32,7 +32,7 @@ public class LevelTwoTaskOneB {
             num = sc.nextInt();
             arr[i] = num;
         }
-        System.out.println("Array arr: " + Arrays.toString(arr));
+        System.out.println("Числа, которые вы ввели: " + Arrays.toString(arr));
         return arr;
     }
 
