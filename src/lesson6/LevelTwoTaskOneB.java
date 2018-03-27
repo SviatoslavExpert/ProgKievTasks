@@ -92,21 +92,4 @@ public class LevelTwoTaskOneB {
         }
     }
 }
-
-/*
-        if (arr[0] + 2 == arr[1] && arr[1] + 2 == arr[2] && arr[2] + 2 == arr[3]) {
-            System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] + 2));
-        } else if (arr[0] + 3 == arr[1] && arr[1] + 3 == arr[2] && arr[2] + 3 == arr[3]) {
-            System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] + 3));
-        } else if (arr[0] * 2 == arr[1] && arr[1] * 2 == arr[2] && arr[2] * 2 == arr[3]) {
-            System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] * 2));
-        } else if (arr[0] * 3 == arr[1] && arr[1] * 3 == arr[2] && arr[2] * 3 == arr[3]) {
-            System.out.println("Следующее число в этой последовательности: " + (arr[arr.length - 1] * 3));
-        } else if ((Math.pow(arr[0], 2) == 1) && (Math.pow(arr[1], 2) == 4) && (Math.pow(arr[2], 2) == 9)) {
-            System.out.println("Следующее число в этой последовательности: " + (Math.pow(arr[arr.length - 1], 2)));
-        } else if ((Math.pow(arr[0], 3) == 1) && (Math.pow(arr[1], 3) == 8) && (Math.pow(arr[2], 3) == 27)) {
-            System.out.println("Следующее число в этой последовательности: " + (Math.pow(arr[arr.length - 1], 3)));
-        }else{
-            System.out.println("Неизвестная последовательность чисел.");
-        }
- */
+/*  to make switch   */
