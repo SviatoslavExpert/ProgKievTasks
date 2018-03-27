@@ -21,18 +21,23 @@ public class LevelTwoTaskOne {
 
     private static int[] scanNumbers(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Укажите, пожалуйста, сколько чисел вы собираетесь ввести: ");
+        System.out.println("Необходимо ввести не менее 4-х чисел. Укажите, сколько чисел вы собираетесь ввести: ");
         int numbers = sc.nextInt();
 
-        int[] arr = new int[numbers];
+        if(numbers >= 4) {
+            int[] arr = new int[numbers];
 
-        int num = 0;
-        for(int i = 0; i < numbers; i++){
-            System.out.println("Введите число № " + i);
-            num = sc.nextInt();
-            arr[i] = num;
+            int num = 0;
+            for (int i = 0; i < numbers; i++) {
+                System.out.println("Введите число № " + i);
+                num = sc.nextInt();
+                arr[i] = num;
+            }
+            return arr;
+        } else {
+            System.out.println("Вы ввели недостаточное количество чисел.");
         }
-        return arr;
+
     }
 
     private static int getPattern(int[] arr){
