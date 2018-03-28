@@ -92,4 +92,6 @@ public class LevelTwoTaskOneB {
         }
     }
 }
-/*  to make switch   */
+/*  to make a switch  , add default
+* check Alexander's solution
+* */
