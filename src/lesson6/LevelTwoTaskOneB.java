@@ -67,10 +67,10 @@ public class LevelTwoTaskOneB {
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
         System.out.println("Массив counts: " + Arrays.toString(counts));
 
-        printNumber(counts, arr);
+        getNumber(counts, arr);
     }
 
-    private static void printNumber(int[] counts, int[]arr){
+    private static void getNumber(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
         if(counts[0] >= 3 ){
             System.out.println(s + (arr[arr.length - 1] + 2));
@@ -92,6 +92,3 @@ public class LevelTwoTaskOneB {
         }
     }
 }
-/*  to make a switch  , add default
-* check Alexander's solution
-* */
