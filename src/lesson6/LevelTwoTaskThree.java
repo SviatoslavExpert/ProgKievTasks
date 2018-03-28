@@ -31,9 +31,9 @@ public class LevelTwoTaskThree {
         }
     }
 
-    private static void swap(int[] arr, int k, int i) {
-        int tmp = arr[k];
-        arr[k] = arr[i];
-        arr[i] = tmp;
+    private static void swap(int[] arr, int j, int i) {
+        int b = arr[j];
+        arr[j] = arr[i];
+        arr[i] = b;
     }
 }
