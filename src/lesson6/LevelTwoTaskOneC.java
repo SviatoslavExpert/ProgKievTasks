@@ -72,6 +72,20 @@ public class LevelTwoTaskOneC {
 
     private static void getNumber(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
+        int num = 6;
+        int result = 0;
+        int countSequence = 0;
+        for(int i = 0; i < num; i++){
+            if(counts[i] == arr.length - 1){
+                result = i;
+                ++countSequence;
+            }
+        }
+
+    }
+}
+
+/*
         if(counts[0] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] + 2));
         }
@@ -90,5 +104,4 @@ public class LevelTwoTaskOneC {
         if(counts[5] == arr.length - 1){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 3)));
         }
-    }
-}
+ */
