@@ -72,22 +72,22 @@ public class LevelTwoTaskOneB {
 
     private static void getNumber(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
-        if(counts[0] >= 3 ){
+        if(counts[0] == arr.length ){
             System.out.println(s + (arr[arr.length - 1] + 2));
         }
-        if(counts[1] >= 3 ){
+        if(counts[1] == arr.length ){
             System.out.println(s + (arr[arr.length - 1] + 3));
         }
-        if(counts[2] >= 3 ){
+        if(counts[2] == arr.length ){
             System.out.println(s + (arr[arr.length - 1] * 2));
         }
-        if(counts[3] >= 3 ){
+        if(counts[3] == arr.length ){
             System.out.println(s + (arr[arr.length - 1] * 3));
         }
-        if(counts[4] >= 3 ){
+        if(counts[4] == arr.length ){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 2)));
         }
-        if(counts[5] >= 3 ){
+        if(counts[5] == arr.length ){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 3)));
         }
     }
