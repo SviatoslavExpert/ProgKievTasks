@@ -17,7 +17,8 @@ import java.util.Scanner;
 
 public class LevelTwoTaskOne {
     public static void main(String[] args) {
-        checkSequence(scanNumbers());
+
+        processSequence(scanNumbers());
     }
 
     private static int[] scanNumbers() {
@@ -37,7 +38,7 @@ public class LevelTwoTaskOne {
         return arr;
     }
 
-    private static void checkSequence(int[] arr) {
+    private static void processSequence(int[] arr) {
         int countOne = 0;
         int countTwo = 0;
         int countThree = 0;
@@ -67,28 +68,33 @@ public class LevelTwoTaskOne {
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
         System.out.println("Массив counts: " + Arrays.toString(counts));
 
-        getNumber(counts, arr);
+        getResult(counts, arr);
     }
 
-    private static void getNumber(int[] counts, int[]arr){
+    private static void getResult(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
-        if(counts[0] >= 3 ){
+        if(counts[0] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] + 2));
         }
-        if(counts[1] >= 3 ){
+        if(counts[1] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] + 3));
         }
-        if(counts[2] >= 3 ){
+        if(counts[2] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] * 2));
         }
-        if(counts[3] >= 3 ){
+        if(counts[3] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] * 3));
         }
-        if(counts[4] >= 3 ){
+        if(counts[4] == arr.length - 1){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 2)));
         }
-        if(counts[5] >= 3 ){
+        if(counts[5] == arr.length - 1){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 3)));
+        }
+        if((counts[0] != arr.length - 1) && (counts[1] != arr.length - 1) &&
+                (counts[2] != arr.length - 1) && (counts[3] != arr.length - 1) &&
+                (counts[4] != arr.length - 1) && (counts[5] != arr.length - 1)){
+            System.out.println("Такой последовательности в программе нет.");
         }
     }
 }
