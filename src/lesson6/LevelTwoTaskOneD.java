@@ -93,8 +93,8 @@ public class LevelTwoTaskOneD {
         }
         if((counts[0] != arr.length - 1) && (counts[1] != arr.length - 1) &&
            (counts[2] != arr.length - 1) && (counts[3] != arr.length - 1) &&
-           (counts[4] != arr.length - 1) && (counts[5] == arr.length - 1)){
-            System.out.println("Такая последовательность в программе не учтена.");
+           (counts[4] != arr.length - 1) && (counts[5] != arr.length - 1)){
+            System.out.println("Такой последовательности в программе нет.");
         }
     }
 }
