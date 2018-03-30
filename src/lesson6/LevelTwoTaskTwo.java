@@ -29,6 +29,7 @@ public class LevelTwoTaskTwo {
         int partFour;
         int partFive;
         int partSix;
+        int count = 0;
         ArrayList arrayOfPalindromes = new ArrayList();
         for(int i = 0; i < arr.length; i++){
             if(Integer.toString(arr[i]).length() == 6){
@@ -40,10 +41,12 @@ public class LevelTwoTaskTwo {
                 partSix = arr[i] % 10;
                 if(partOne == partSix && partTwo == partFive && partThree == partFour){
                     arrayOfPalindromes.add(arr[i]);
+                    ++count;
                 }
             }
         }
         System.out.println("All palindromes: " + Arrays.toString(arrayOfPalindromes.toArray()));
         System.out.println("Maximum palindrome: " + arrayOfPalindromes.get(arrayOfPalindromes.size() - 1));
+        System.out.println(count);
     }
 }
