@@ -17,6 +17,7 @@ import java.util.Scanner;
 
 public class LevelTwoTaskOneD {
     public static void main(String[] args) {
+
         checkSequence(scanNumbers());
     }
 
