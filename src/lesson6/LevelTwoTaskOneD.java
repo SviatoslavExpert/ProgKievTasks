@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class LevelTwoTaskOneD {
     public static void main(String[] args) {
 
-        checkSequence(scanNumbers());
+        processSequence(scanNumbers());
     }
 
     private static int[] scanNumbers() {
@@ -38,7 +38,7 @@ public class LevelTwoTaskOneD {
         return arr;
     }
 
-    private static void checkSequence(int[] arr) {
+    private static void processSequence(int[] arr) {
         int countOne = 0;
         int countTwo = 0;
         int countThree = 0;
@@ -68,10 +68,10 @@ public class LevelTwoTaskOneD {
         int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
         System.out.println("Массив counts: " + Arrays.toString(counts));
 
-        getNumber(counts, arr);
+        getResult(counts, arr);
     }
 
-    private static void getNumber(int[] counts, int[]arr){
+    private static void getResult(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
         if(counts[0] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] + 2));
