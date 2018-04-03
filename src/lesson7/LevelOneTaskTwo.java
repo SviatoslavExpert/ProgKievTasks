@@ -13,10 +13,12 @@ public class LevelOneTaskTwo {
 
     private static String convertArraysToString(int[]array){
         String s = "";
-        for(int i = 0; i < array.length; i++){
-            s = s + array[i];
+        for(int i : array){
+            s = s + i;
         }
         return s;
     }
-
 }
+/*
+   i gets value of each element of the array in: for(int i : array)
+ */
