@@ -45,61 +45,69 @@ public class LevelTwoTaskOneE {
         int countFour = 0;
         int countFive = 0;
         int countSix = 0;
-        int n = 0;
         for(int i = 0; i < (arr.length - 1); i++){
             if(arr[i] + (arr[i + 1] - arr[i]) == arr[i + 1]){
                 ++countOne;
-                n = arr[i + 1] - arr[i];
             }
             /*
             if(arr[i] + (arr[i + 1] - arr[i]) == arr[i + 1]){
                 ++countTwo;
             }
             */
-            if(arr[i] * 2 == arr[i + 1]){
-                ++countThree;
+            if(arr[i] * (arr[i + 1] / arr[i]) == arr[i + 1]){
+                ++countTwo;
             }
+            /*
             if(arr[i] * 3 == arr[i + 1]){
                 ++countFour;
             }
+            */
+            /*
             if(arr[i] == Math.pow(i + 1, 2)){
-                ++countFive;
+                ++countThree;
             }
+            */
+            /*
             if(arr[i] == Math.pow(i + 1, 3)){
                 ++countSix;
             }
+            */
         }
-        int[] counts = {countOne, countTwo, countThree, countFour, countFive, countSix};
+        int[] counts = {countOne, countTwo};
         System.out.println("Массив counts: " + Arrays.toString(counts));
 
-        getResult(counts, arr, n);
+        getResult(counts, arr);
     }
 
-    private static void getResult(int[] counts, int[]arr, int n){
+    private static void getResult(int[] counts, int[]arr){
         String s = "Следующее число в этой последовательности: ";
         if(counts[0] == arr.length - 1){
-            System.out.println(s + (arr[arr.length - 1] + n));
+            System.out.println(s + (arr[arr.length - 1] + (arr[1] - arr[0])));
         }
         /*
         if(counts[1] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] + 3));
         }
         */
-        if(counts[2] == arr.length - 1){
-            System.out.println(s + (arr[arr.length - 1] * 2));
+        if(counts[1] == arr.length - 1){
+            System.out.println(s + (arr[arr.length - 1] * (arr[1] / arr[0])));
         }
+        /*
         if(counts[3] == arr.length - 1){
             System.out.println(s + (arr[arr.length - 1] * 3));
         }
-        if(counts[4] == arr.length - 1){
-            System.out.println(s + (int)(Math.pow(arr.length + 1, 2)));
+        */
+        /*
+        if(counts[2] == arr.length - 1){
+            System.out.println(s + (int)(Math.pow(arr.length + 1, )));
         }
+        */
+        /*
         if(counts[5] == arr.length - 1){
             System.out.println(s + (int)(Math.pow(arr.length + 1, 3)));
         }
-        if((counts[0] != arr.length - 1) && (counts[1] != arr.length - 1) &&
-                (counts[2] != arr.length - 1) && (counts[3] != arr.length - 1) &&
-                (counts[4] != arr.length - 1) && (counts[5] != arr.length - 1)){
+        */
+        if((counts[0] != arr.length - 1) && (counts[1] != arr.length - 1) && (counts[2] != arr.length - 1)){
             System.out.println("Такой последовательности в программе нет.");
         }
     }
