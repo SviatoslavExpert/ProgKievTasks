@@ -1,5 +1,5 @@
 /*
-В файл c.txt будет записана информация с помощью класса PrintWriter
+Info will be recorded in the file c.txt with class PrintWriter;
  */
 
 package lesson8;
