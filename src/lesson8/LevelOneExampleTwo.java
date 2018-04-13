@@ -1,3 +1,7 @@
+/*
+
+ */
+
 package lesson8;
 
 import java.io.File;
@@ -7,7 +11,7 @@ import java.util.Scanner;
 public class LevelOneExampleTwo {
 
     public static void main(String[] args){
-        String text = loadFromFile(new File("a.txt"));
+        String text = loadFromFile(new File("c.txt"));
         System.out.println(text);
     }
 
@@ -19,7 +23,8 @@ public class LevelOneExampleTwo {
                 sb.append(sc.nextLine()).append(System.lineSeparator());
             }
         } catch(IOException e){
-
+            System.out.println(e);
         }
+        return sb.toString();
     }
 }

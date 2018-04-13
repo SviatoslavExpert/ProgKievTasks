@@ -1,3 +1,7 @@
+/*
+В файл c.txt будет записана информация с помощью класса PrintWriter
+ */
+
 package lesson8;
 
 import java.io.FileNotFoundException;
