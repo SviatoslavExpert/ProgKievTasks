@@ -45,8 +45,10 @@ public class LevelTwoTaskOneE {
         int countFour = 0;
         int countFive = 0;
         int countSix = 0;
+        int n = arr[1] - arr[0];
+        int k = arr[2]/arr[1];
         for(int i = 0; i < (arr.length - 1); i++){
-            if(arr[i] + (arr[i + 1] - arr[i]) == arr[i + 1]){
+            if(arr[i] + n == arr[i + 1]){
                 ++countOne;
             }
             /*
@@ -54,7 +56,7 @@ public class LevelTwoTaskOneE {
                 ++countTwo;
             }
             */
-            if(arr[i] * (arr[i + 1] / arr[i]) == arr[i + 1]){
+            if(arr[i] * k == arr[i + 1]){
                 ++countTwo;
             }
             /*
@@ -76,13 +78,13 @@ public class LevelTwoTaskOneE {
         int[] counts = {countOne, countTwo};
         System.out.println("Массив counts: " + Arrays.toString(counts));
 
-        getResult(counts, arr);
+        getResult(counts, arr, n, k);
     }
 
-    private static void getResult(int[] counts, int[]arr){
+    private static void getResult(int[] counts, int[]arr, int n, int k){
         String s = "Следующее число в этой последовательности: ";
         if(counts[0] == arr.length - 1){
-            System.out.println(s + (arr[arr.length - 1] + (arr[1] - arr[0])));
+            System.out.println(s + (arr[arr.length - 1] + n));
         }
         /*
         if(counts[1] == arr.length - 1){
@@ -90,7 +92,7 @@ public class LevelTwoTaskOneE {
         }
         */
         if(counts[1] == arr.length - 1){
-            System.out.println(s + (arr[arr.length - 1] * (arr[1] / arr[0])));
+            System.out.println(s + (arr[arr.length - 1] * k));
         }
         /*
         if(counts[3] == arr.length - 1){
