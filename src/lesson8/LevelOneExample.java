@@ -13,7 +13,7 @@ public class LevelOneExample {
 
             a.println("Hello World!");
         } catch(FileNotFoundException e) {
-
+            System.out.println("ERROR FILE WRITE");
         }
     }
 }
