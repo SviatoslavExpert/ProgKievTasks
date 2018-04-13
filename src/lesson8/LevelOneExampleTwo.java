@@ -11,5 +11,15 @@ public class LevelOneExampleTwo {
         System.out.println(text);
     }
 
+    public static String loadFromFile(File file){
+        StringBuilder sb = new StringBuilder();
 
+        try(Scanner sc = new Scanner(file)){
+            for(;sc.hasNextLine();){
+                sb.append(sc.nextLine()).append(System.lineSeparator());
+            }
+        } catch(IOException e){
+
+        }
+    }
 }
