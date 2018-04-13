@@ -1,5 +1,5 @@
 /*
-
+Reading info from file with Scanner
  */
 
 package lesson8;
