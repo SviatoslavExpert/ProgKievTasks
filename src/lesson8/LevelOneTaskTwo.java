@@ -6,5 +6,8 @@
 package lesson8;
 
 public class LevelOneTaskTwo {
+    public static void main(String[] args){
+
+    }
 
 }
